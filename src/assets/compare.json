@@ -1,0 +1,523 @@
+[
+    {
+        "response": {
+            "id": "chatcmpl-9P8mG1taVhTgN75QdwkWRVjLK7dCv",
+            "object": "chat.completion",
+            "created": 1715778968,
+            "model": "gpt-4-1106-vision-preview",
+            "choices": [
+                {
+                    "index": 0,
+                    "message": {
+                        "role": "assistant",
+                        "content": "```json\n{\n    \"Judgment\": \"true\",\n    \"Reason\": \"The images show two different views of what appears to be a chemical element reference application. The first image displays a periodic table view, while the second image shows a detailed list view of elements with additional information such as atomic weight.\",\n    \"Logic\": \"These two pages perform the same function within the application, which is to provide information about chemical elements. The periodic table view offers a general overview, while the list view provides detailed data for each element. Therefore, they are considered different states of the same page in terms of business logic.\"\n}\n```"
+                    },
+                    "logprobs": null,
+                    "finish_reason": "stop"
+                }
+            ],
+            "usage": {
+                "prompt_tokens": 2337,
+                "completion_tokens": 126,
+                "total_tokens": 2463
+            },
+            "system_fingerprint": null
+        },
+        "request": [
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "\n the task is comparing two image to determine if they represent different states of the same page.\n the factors to consider is their roles in the business or functional logic.\nReturn the results in Standard JSON format with the following structure: \n{\n    \"Judgment\": <You cannot output anything else except \"true\" or \"false\">,\n    \"Reason\":<...>,\n    \"Logic\": <such as These two pages perform the same function within the application, such as displaying similar content or executing similar actions, so they are considered different states of the same page in terms of business logic.>\n\n}\n"
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": "data:image/jpeg;base64,/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-06-43.png"
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": "data:image/jpeg;base64,/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-16-00.png"
+                    }
+                ]
+            }
+        ],
+        "pageA": {
+            "savedir": "/Users/linbao/zju/uitest/proj/assets/",
+            "imgpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-06-43.png",
+            "xmlpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-06-43.xml",
+            "jsonpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-06-43.json",
+            "elementpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-06-43-element.json"
+        },
+        "pageB": {
+            "savedir": "/Users/linbao/zju/uitest/proj/assets/",
+            "imgpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-16-00.png",
+            "xmlpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-16-00.xml",
+            "jsonpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-16-00.json",
+            "elementpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-16-00-element.json"
+        }
+    },
+    {
+        "response": {
+            "id": "chatcmpl-9P90au3O4zDZe6LTflCJuGRwm175J",
+            "object": "chat.completion",
+            "created": 1715779856,
+            "model": "gpt-4-1106-vision-preview",
+            "choices": [
+                {
+                    "index": 0,
+                    "message": {
+                        "role": "assistant",
+                        "content": "```json\n{\n    \"Judgment\": \"true\",\n    \"Reason\": \"Both images display the same application page with different content visible. The overall layout, design elements, and navigation options remain consistent between the two states, indicating they are part of the same functional page within the application.\",\n    \"Logic\": \"These two pages perform the same function within the application, such as displaying similar content or executing similar actions, so they are considered different states of the same page in terms of business logic.\"\n}\n```"
+                    },
+                    "logprobs": null,
+                    "finish_reason": "stop"
+                }
+            ],
+            "usage": {
+                "prompt_tokens": 2337,
+                "completion_tokens": 103,
+                "total_tokens": 2440
+            },
+            "system_fingerprint": null
+        },
+        "request": [
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "\n the task is comparing two image to determine if they represent different states of the same page.\n the factors to consider is their roles in the business or functional logic.\nReturn the results in Standard JSON format with the following structure: \n{\n    \"Judgment\": <You cannot output anything else except \"true\" or \"false\">,\n    \"Reason\":<...>,\n    \"Logic\": <such as These two pages perform the same function within the application, such as displaying similar content or executing similar actions, so they are considered different states of the same page in terms of business logic.>\n\n}\n"
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": "data:image/jpeg;base64,/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02.png"
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": "data:image/jpeg;base64,/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-30-48.png"
+                    }
+                ]
+            }
+        ],
+        "pageA": {
+            "savedir": "/Users/linbao/zju/uitest/proj/assets/",
+            "imgpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02.png",
+            "xmlpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02.xml",
+            "jsonpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02.json",
+            "elementpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02-element.json"
+        },
+        "pageB": {
+            "savedir": "/Users/linbao/zju/uitest/proj/assets/",
+            "imgpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-30-48.png",
+            "xmlpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-30-48.xml",
+            "jsonpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-30-48.json",
+            "elementpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-30-48-element.json"
+        }
+    },
+    {
+        "response": {
+            "id": "chatcmpl-9P90uvG8dZUXB5e6aXVgr1ncxmwBw",
+            "object": "chat.completion",
+            "created": 1715779876,
+            "model": "gpt-4-1106-vision-preview",
+            "choices": [
+                {
+                    "index": 0,
+                    "message": {
+                        "role": "assistant",
+                        "content": "```json\n{\n    \"Judgment\": \"true\",\n    \"Reason\": \"Both images display the same application page with different content. The layout, design elements, and navigation remain consistent, indicating they are different states of the same page.\",\n    \"Logic\": \"These two pages perform the same function within the application, such as displaying similar content or executing similar actions, so they are considered different states of the same page in terms of business logic.\"\n}\n```"
+                    },
+                    "logprobs": null,
+                    "finish_reason": "stop"
+                }
+            ],
+            "usage": {
+                "prompt_tokens": 2337,
+                "completion_tokens": 93,
+                "total_tokens": 2430
+            },
+            "system_fingerprint": null
+        },
+        "request": [
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "\n the task is comparing two image to determine if they represent different states of the same page.\n the factors to consider is their roles in the business or functional logic.\nReturn the results in Standard JSON format with the following structure: \n{\n    \"Judgment\": <You cannot output anything else except \"true\" or \"false\">,\n    \"Reason\":<...>,\n    \"Logic\": <such as These two pages perform the same function within the application, such as displaying similar content or executing similar actions, so they are considered different states of the same page in terms of business logic.>\n\n}\n"
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": "data:image/jpeg;base64,/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02.png"
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": "data:image/jpeg;base64,/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-31-08.png"
+                    }
+                ]
+            }
+        ],
+        "pageA": {
+            "savedir": "/Users/linbao/zju/uitest/proj/assets/",
+            "imgpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02.png",
+            "xmlpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02.xml",
+            "jsonpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02.json",
+            "elementpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02-element.json"
+        },
+        "pageB": {
+            "savedir": "/Users/linbao/zju/uitest/proj/assets/",
+            "imgpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-31-08.png",
+            "xmlpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-31-08.xml",
+            "jsonpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-31-08.json",
+            "elementpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-31-08-element.json"
+        }
+    },
+    {
+        "response": {
+            "id": "chatcmpl-9P92fJZZ3kPhM6KlYF06B8OT9KBRP",
+            "object": "chat.completion",
+            "created": 1715779985,
+            "model": "gpt-4-1106-vision-preview",
+            "choices": [
+                {
+                    "index": 0,
+                    "message": {
+                        "role": "assistant",
+                        "content": "```json\n{\n    \"Judgment\": \"true\",\n    \"Reason\": \"Both images display the same application page with different content and visual themes. The structure and functionality of the page remain consistent, indicating they are different states of the same page.\",\n    \"Logic\": \"These two pages perform the same function within the application, such as displaying similar content or executing similar actions, so they are considered different states of the same page in terms of business logic.\"\n}\n```"
+                    },
+                    "logprobs": null,
+                    "finish_reason": "stop"
+                }
+            ],
+            "usage": {
+                "prompt_tokens": 2337,
+                "completion_tokens": 95,
+                "total_tokens": 2432
+            },
+            "system_fingerprint": null
+        },
+        "request": [
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "\n the task is comparing two image to determine if they represent different states of the same page.\n the factors to consider is their roles in the business or functional logic.\nReturn the results in Standard JSON format with the following structure: \n{\n    \"Judgment\": <You cannot output anything else except \"true\" or \"false\">,\n    \"Reason\":<...>,\n    \"Logic\": <such as These two pages perform the same function within the application, such as displaying similar content or executing similar actions, so they are considered different states of the same page in terms of business logic.>\n\n}\n"
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": "data:image/jpeg;base64,/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02.png"
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": "data:image/jpeg;base64,/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-32-57.png"
+                    }
+                ]
+            }
+        ],
+        "pageA": {
+            "savedir": "/Users/linbao/zju/uitest/proj/assets/",
+            "imgpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02.png",
+            "xmlpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02.xml",
+            "jsonpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02.json",
+            "elementpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02-element.json"
+        },
+        "pageB": {
+            "savedir": "/Users/linbao/zju/uitest/proj/assets/",
+            "imgpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-32-57.png",
+            "xmlpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-32-57.xml",
+            "jsonpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-32-57.json",
+            "elementpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-32-57-element.json"
+        }
+    },
+    {
+        "response": {
+            "id": "chatcmpl-9P931PRZpkp4Ey5j7vUFSIYqxrwaT",
+            "object": "chat.completion",
+            "created": 1715780007,
+            "model": "gpt-4-1106-vision-preview",
+            "choices": [
+                {
+                    "index": 0,
+                    "message": {
+                        "role": "assistant",
+                        "content": "```json\n{\n    \"Judgment\": \"true\",\n    \"Reason\": \"Both images display the same application interface with different content. The layout, design elements, and navigation remain consistent, indicating they are different states of the same page.\",\n    \"Logic\": \"These two pages perform the same function within the application, such as displaying similar content or executing similar actions, so they are considered different states of the same page in terms of business logic.\"\n}\n```"
+                    },
+                    "logprobs": null,
+                    "finish_reason": "stop"
+                }
+            ],
+            "usage": {
+                "prompt_tokens": 2337,
+                "completion_tokens": 93,
+                "total_tokens": 2430
+            },
+            "system_fingerprint": null
+        },
+        "request": [
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "\n the task is comparing two image to determine if they represent different states of the same page.\n the factors to consider is their roles in the business or functional logic.\nReturn the results in Standard JSON format with the following structure: \n{\n    \"Judgment\": <You cannot output anything else except \"true\" or \"false\">,\n    \"Reason\":<...>,\n    \"Logic\": <such as These two pages perform the same function within the application, such as displaying similar content or executing similar actions, so they are considered different states of the same page in terms of business logic.>\n\n}\n"
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": "data:image/jpeg;base64,/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02.png"
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": "data:image/jpeg;base64,/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-33-21.png"
+                    }
+                ]
+            }
+        ],
+        "pageA": {
+            "savedir": "/Users/linbao/zju/uitest/proj/assets/",
+            "imgpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02.png",
+            "xmlpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02.xml",
+            "jsonpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02.json",
+            "elementpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02-element.json"
+        },
+        "pageB": {
+            "savedir": "/Users/linbao/zju/uitest/proj/assets/",
+            "imgpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-33-21.png",
+            "xmlpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-33-21.xml",
+            "jsonpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-33-21.json",
+            "elementpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-33-21-element.json"
+        }
+    },
+    {
+        "response": {
+            "id": "chatcmpl-9P97AFkalZeSTmKkXPzEZuRYJ8ZZ1",
+            "object": "chat.completion",
+            "created": 1715780264,
+            "model": "gpt-4-1106-vision-preview",
+            "choices": [
+                {
+                    "index": 0,
+                    "message": {
+                        "role": "assistant",
+                        "content": "```json\n{\n    \"Judgment\": \"true\",\n    \"Reason\": \"The images show different views within the same application, likely a periodic table or chemical element reference tool. The first image displays the periodic table with an overlay explaining the color coding of the elements, while the second image appears to be a detailed view of a specific element or a search function within the same application.\",\n    \"Logic\": \"These two pages perform different functions within the application; however, they are part of the same system and contribute to the overall purpose of the application, which is to provide information about chemical elements. The first image is a general overview, and the second is a detailed or search view, making them different states of the same page in terms of business logic.\"\n}\n```"
+                    },
+                    "logprobs": null,
+                    "finish_reason": "stop"
+                }
+            ],
+            "usage": {
+                "prompt_tokens": 2337,
+                "completion_tokens": 155,
+                "total_tokens": 2492
+            },
+            "system_fingerprint": null
+        },
+        "request": [
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "\n the task is comparing two image to determine if they represent different states of the same page.\n the factors to consider is their roles in the business or functional logic.\nReturn the results in Standard JSON format with the following structure: \n{\n    \"Judgment\": <You cannot output anything else except \"true\" or \"false\">,\n    \"Reason\":<...>,\n    \"Logic\": <such as These two pages perform the same function within the application, such as displaying similar content or executing similar actions, so they are considered different states of the same page in terms of business logic.>\n\n}\n"
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": "data:image/jpeg;base64,/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-06-43.png"
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": "data:image/jpeg;base64,/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-37-05.png"
+                    }
+                ]
+            }
+        ],
+        "pageA": {
+            "savedir": "/Users/linbao/zju/uitest/proj/assets/",
+            "imgpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-06-43.png",
+            "xmlpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-06-43.xml",
+            "jsonpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-06-43.json",
+            "elementpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-06-43-element.json"
+        },
+        "pageB": {
+            "savedir": "/Users/linbao/zju/uitest/proj/assets/",
+            "imgpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-37-05.png",
+            "xmlpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-37-05.xml",
+            "jsonpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-37-05.json",
+            "elementpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-37-05-element.json"
+        }
+    },
+    {
+        "response": {
+            "id": "chatcmpl-9P9DsRU2TVPvUy3Tp0SNwAhA4kZ1i",
+            "object": "chat.completion",
+            "created": 1715780680,
+            "model": "gpt-4-1106-vision-preview",
+            "choices": [
+                {
+                    "index": 0,
+                    "message": {
+                        "role": "assistant",
+                        "content": "```json\n{\n    \"Judgment\": \"true\",\n    \"Reason\": \"Both images display a list of items with associated properties such as density and temperature ranges. The layout, design, and functionality appear consistent between the two images, indicating that they are different states of the same page. The differences in the battery percentage and time at the top of the screen suggest that the screenshots were taken at different times, which could account for any changes in the data presented.\",\n    \"Logic\": \"These two pages perform the same function within the application, such as displaying similar content or executing similar actions, so they are considered different states of the same page in terms of business logic.\"\n}\n```"
+                    },
+                    "logprobs": null,
+                    "finish_reason": "stop"
+                }
+            ],
+            "usage": {
+                "prompt_tokens": 2337,
+                "completion_tokens": 138,
+                "total_tokens": 2475
+            },
+            "system_fingerprint": null
+        },
+        "request": [
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "\n the task is comparing two image to determine if they represent different states of the same page.\n the factors to consider is their roles in the business or functional logic.\nReturn the results in Standard JSON format with the following structure: \n{\n    \"Judgment\": <You cannot output anything else except \"true\" or \"false\">,\n    \"Reason\":<...>,\n    \"Logic\": <such as These two pages perform the same function within the application, such as displaying similar content or executing similar actions, so they are considered different states of the same page in terms of business logic.>\n\n}\n"
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": "data:image/jpeg;base64,/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-29-48.png"
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": "data:image/jpeg;base64,/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-44-33.png"
+                    }
+                ]
+            }
+        ],
+        "pageA": {
+            "savedir": "/Users/linbao/zju/uitest/proj/assets/",
+            "imgpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-29-48.png",
+            "xmlpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-29-48.xml",
+            "jsonpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-29-48.json",
+            "elementpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-29-48-element.json"
+        },
+        "pageB": {
+            "savedir": "/Users/linbao/zju/uitest/proj/assets/",
+            "imgpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-44-33.png",
+            "xmlpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-44-33.xml",
+            "jsonpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-44-33.json",
+            "elementpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-44-33-element.json"
+        }
+    },
+    {
+        "response": {
+            "id": "chatcmpl-9P9EI7W8RgN4xEIP8I1Vv10EmW9Rp",
+            "object": "chat.completion",
+            "created": 1715780706,
+            "model": "gpt-4-1106-vision-preview",
+            "choices": [
+                {
+                    "index": 0,
+                    "message": {
+                        "role": "assistant",
+                        "content": "```json\n{\n    \"Judgment\": \"true\",\n    \"Reason\": \"Both images display a list of items with associated numerical data. The layout, design, and structure of the content are consistent across both images, indicating that they are different states of the same page. The differences in the battery percentage and time at the top of the screen suggest that the screenshots were taken at different times, which could account for any changes in the data presented.\",\n    \"Logic\": \"These two pages perform the same function within the application, such as displaying similar content or executing similar actions, so they are considered different states of the same page in terms of business logic.\"\n}\n```"
+                    },
+                    "logprobs": null,
+                    "finish_reason": "stop"
+                }
+            ],
+            "usage": {
+                "prompt_tokens": 2337,
+                "completion_tokens": 135,
+                "total_tokens": 2472
+            },
+            "system_fingerprint": null
+        },
+        "request": [
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "\n the task is comparing two image to determine if they represent different states of the same page.\n the factors to consider is their roles in the business or functional logic.\nReturn the results in Standard JSON format with the following structure: \n{\n    \"Judgment\": <You cannot output anything else except \"true\" or \"false\">,\n    \"Reason\":<...>,\n    \"Logic\": <such as These two pages perform the same function within the application, such as displaying similar content or executing similar actions, so they are considered different states of the same page in terms of business logic.>\n\n}\n"
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": "data:image/jpeg;base64,/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-29-48.png"
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": "data:image/jpeg;base64,/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-44-58.png"
+                    }
+                ]
+            }
+        ],
+        "pageA": {
+            "savedir": "/Users/linbao/zju/uitest/proj/assets/",
+            "imgpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-29-48.png",
+            "xmlpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-29-48.xml",
+            "jsonpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-29-48.json",
+            "elementpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-29-48-element.json"
+        },
+        "pageB": {
+            "savedir": "/Users/linbao/zju/uitest/proj/assets/",
+            "imgpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-44-58.png",
+            "xmlpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-44-58.xml",
+            "jsonpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-44-58.json",
+            "elementpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-44-58-element.json"
+        }
+    },
+    {
+        "response": {
+            "id": "chatcmpl-9P9HP2Z9taYGyPZAo6Tw5Q5WkusXu",
+            "object": "chat.completion",
+            "created": 1715780899,
+            "model": "gpt-4-1106-vision-preview",
+            "choices": [
+                {
+                    "index": 0,
+                    "message": {
+                        "role": "assistant",
+                        "content": "```json\n{\n    \"Judgment\": \"true\",\n    \"Reason\": \"Both images display the same mobile application page with different content. The layout, design elements, and navigation remain consistent, indicating they are different states of the same page.\",\n    \"Logic\": \"These two pages perform the same function within the application, such as displaying similar content or executing similar actions, so they are considered different states of the same page in terms of business logic.\"\n}\n```"
+                    },
+                    "logprobs": null,
+                    "finish_reason": "stop"
+                }
+            ],
+            "usage": {
+                "prompt_tokens": 2337,
+                "completion_tokens": 94,
+                "total_tokens": 2431
+            },
+            "system_fingerprint": null
+        },
+        "request": [
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": "\n the task is comparing two image to determine if they represent different states of the same page.\n the factors to consider is their roles in the business or functional logic.\nReturn the results in Standard JSON format with the following structure: \n{\n    \"Judgment\": <You cannot output anything else except \"true\" or \"false\">,\n    \"Reason\":<...>,\n    \"Logic\": <such as These two pages perform the same function within the application, such as displaying similar content or executing similar actions, so they are considered different states of the same page in terms of business logic.>\n\n}\n"
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": "data:image/jpeg;base64,/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02.png"
+                    },
+                    {
+                        "type": "image_url",
+                        "image_url": "data:image/jpeg;base64,/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-48-09.png"
+                    }
+                ]
+            }
+        ],
+        "pageA": {
+            "savedir": "/Users/linbao/zju/uitest/proj/assets/",
+            "imgpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02.png",
+            "xmlpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02.xml",
+            "jsonpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02.json",
+            "elementpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-11-02-element.json"
+        },
+        "pageB": {
+            "savedir": "/Users/linbao/zju/uitest/proj/assets/",
+            "imgpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-48-09.png",
+            "xmlpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-48-09.xml",
+            "jsonpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-48-09.json",
+            "elementpath": "/Users/linbao/zju/uitest/proj/assets/2024-05-15-21-48-09-element.json"
+        }
+    }]
